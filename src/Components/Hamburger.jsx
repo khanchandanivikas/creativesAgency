@@ -5,7 +5,6 @@ const Hamburger = (props) => {
   const showHideHamburger = props.toggleHamburger;
   const hamburgerState = props.hamburger;
   return (
-    // <div className="hamburger-menu">
     <div className={hamburgerState ? "hamburger-menu" : "hamburger-menu-hide"}>
       <ul className="hamburger-list">
         <li onClick={showHideHamburger} className="list-item-hamburger">

@@ -4,11 +4,32 @@ import arrow from "./images/icon-arrow-down.svg";
 import imageHeader from "./images/image-header.jpg";
 import "./Style/Header.css";
 import Hamburger from "./Hamburger";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [hamburger, setHamburger] = useState(false);
   const toggleHamburger = () => {
     setHamburger(!hamburger);
+  };
+
+  const animationText = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.7,
+        delay: 0.22,
+      },
+    },
+  };
+  const animationArrow = {
+    hidden: { translateY: -200 },
+    visible: {
+      translateY: 0,
+      transition: {
+        duration: 0.38,
+      },
+    },
   };
   return (
     <div
@@ -40,12 +61,23 @@ const Header = () => {
         </li>
       </div>
       <div>
-        <h1 className="header-heading">WE ARE CREATIVES</h1>
+        <motion.h1
+          variants={animationText}
+          initial="hidden"
+          animate="visible"
+          className="header-heading"
+        >
+          WE ARE CREATIVES
+        </motion.h1>
       </div>
-      <div className="arrow-container">
+      <motion.div
+        variants={animationArrow}
+        initial="hidden"
+        animate="visible"
+        className="arrow-container"
+      >
         <img src={arrow} alt="arrow" className="arrow" />
-      </div>
-      {/* {hamburger ? <Hamburger toggleHamburger={toggleHamburger} /> : null} */}
+      </motion.div>
       <Hamburger hamburger={hamburger} toggleHamburger={toggleHamburger} />
     </div>
   );
