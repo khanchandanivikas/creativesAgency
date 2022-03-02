@@ -22,12 +22,13 @@ const Header = () => {
       },
     },
   };
+
   const animationArrow = {
     hidden: { translateY: -200 },
     visible: {
       translateY: 0,
       transition: {
-        duration: 0.38,
+        duration: 0.5,
       },
     },
   };

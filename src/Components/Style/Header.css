@@ -41,6 +41,7 @@ h1 {
 
 .arrow {
     width: 2%;
+    min-width: 20px;
 }
 
 .arrow-container {

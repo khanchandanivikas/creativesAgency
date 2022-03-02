@@ -1,7 +1,8 @@
 /* grid container */
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, minmax(450px, 1fr));
 }
 
@@ -65,8 +66,14 @@ h4 {
     padding: 18rem 6rem 2rem 6rem;
 }
 
-@media only screen and (max-width:550px) {
+@media only screen and (max-width:900px) {
     .container {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width:481px) {
+    .text {
+        padding: 4rem;
     }
 }
