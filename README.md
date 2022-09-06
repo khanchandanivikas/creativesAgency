@@ -9,6 +9,4 @@
 
 ### Development
 
-A challenge from Frontend Mentor.
-
 Happy coding!

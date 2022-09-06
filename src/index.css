@@ -1,8 +1,49 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --primary-color: #3DBEFF;
+    --secondary-color: hsl(168, 34%, 41%);
+    --text-color: #333;
+    --light-grey: #393939;
 }
 
 body {
     font-family: 'Barlow', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Fraunces', serif;
+    letter-spacing: 1px;
+}
+
+button {
+    outline: none;
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: 0.8px;
+}
+
+a {
+    text-decoration: none;
 }

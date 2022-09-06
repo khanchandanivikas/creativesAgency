@@ -1,0 +1,67 @@
+/* container */
+.myHeader_container {
+    padding: 1rem 10%;
+    background-color: var(--primary-color);
+}
+
+/* wrapper */
+.myHeader_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+/* nav links */
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    z-index: 1;
+}
+
+/* nav link */
+.nav_list_item a {
+    color: var(--white);
+}
+
+/* hamburger icon */
+.hamburgerIcon {
+    display: none;
+}
+
+/* mobile version */
+@media only screen and (max-width: 768px) {
+
+    /* container */
+    .myHeader_container {
+        position: relative;
+        padding: 0.5rem 1.5rem;
+    }
+
+    /* hamburger icon */
+    .hamburgerIcon {
+        display: block;
+    }
+
+    /* when hamburger is open */
+    .nav_list {
+        justify-content: flex-start;
+        flex-direction: column;
+        position: absolute;
+        top: 3.9rem;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        transition: all 0.5s ease-in-out;
+        background-color: var(--primary-color);
+    }
+
+    /* when hamburger is closed */
+    .hidden {
+        transform: translateY(-150%) !important;
+    }
+
+}

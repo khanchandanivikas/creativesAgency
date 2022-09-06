@@ -1,0 +1,81 @@
+/* grid container */
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.egg {
+    background-image: url("../images/egg.jpg");
+}
+
+.cup {
+    background-image: url("../images/cup.jpg");
+}
+
+.cherry {
+    background-image: url("../images/cherry.jpg");
+}
+
+.orange {
+    background-image: url("../images/orange.jpg");
+}
+
+.egg,
+.cup,
+.cherry,
+.orange {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 450px;
+}
+
+.grid_text,
+.cherry,
+.orange {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 4rem 1.5rem;
+}
+
+.cherry,
+.orange {
+    justify-content: flex-end;
+}
+
+/* text cards */
+.grid_text {
+    justify-content: center;
+    min-height: 450px;
+}
+
+.grid_text h2 {
+    margin-bottom: 1rem;
+}
+
+.grid_text a {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+@media only screen and (min-width:768px) {
+    .grid_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid_text,
+    .cherry,
+    .orange {
+        padding: 4rem 4rem;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+
+    .grid_text,
+    .cherry,
+    .orange {
+        padding: 4rem 7rem;
+    }
+}

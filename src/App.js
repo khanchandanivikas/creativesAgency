@@ -1,14 +1,15 @@
-import "./App.css";
-import Header from "./Components/Header";
-import GridImages from "./Components/GridImages";
-import Testimonials from "./Components/Testimonials";
-import FourImages from './Components/FourImages';
-import Footer from './Components/Footer';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import GridImages from "./components/GridImages";
+import Testimonials from "./components/Testimonials";
+import FourImages from './components/FourImages';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
+      <Hero />
       <GridImages />
       <Testimonials />
       <FourImages />
