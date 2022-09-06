@@ -1,6 +1,6 @@
 # Designer Landing Page
 
-![Design preview for the designer landing page.](./src/Components/images/preview.jpg)
+![Design preview for the designer landing page.](./src/images/preview.jpg)
 
 ### Tools
 
