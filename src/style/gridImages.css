@@ -50,10 +50,7 @@
     min-height: 450px;
 }
 
-.grid_text h2 {
-    margin-bottom: 1rem;
-}
-
+/* learn more */
 .grid_text a {
     color: var(--text-color);
     font-weight: 600;

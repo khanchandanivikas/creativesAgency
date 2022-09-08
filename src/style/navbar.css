@@ -18,7 +18,7 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    gap: 1rem;
+    gap: 1.5rem;
     z-index: 1;
 }
 
@@ -61,7 +61,7 @@
 
     /* when hamburger is closed */
     .hidden {
-        transform: translateY(-150%) !important;
+        transform: translateY(-150%);
     }
 
 }
